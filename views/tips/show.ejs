@@ -1,0 +1,15 @@
+<ul>
+    <% if(!tips){%>
+
+        <p> Aún no se han añadido pistas para este quiz.</p>
+
+    <% } else {%>
+
+    <% for (var i in tips) { %>
+        <% var tip = tips[i]; %>
+        <% if (tip.accepted) { %>
+         <li>
+            <%= tip.text %>
+         </li>
+    <% }}} %>
+</ul>
